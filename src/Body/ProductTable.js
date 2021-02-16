@@ -11,8 +11,8 @@ display: grid;
 grid-gap: 1em;
 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 `;
-export default function ProductTable(){
-    const productData = data.map((item,index) => <Product name={item.name} price={item.price} key={item.id} photo={item.photo}/>);
+export default function ProductTable(props){
+    const productData = data.map((item,index) => <Product name={item.name} price={item.price} key={item.id} photo={item.photo} onClick={props.onClick}/>);
 
     return (
         <ProductTableWrapper>

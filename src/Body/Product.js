@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React from "react";
+import React,{useState} from "react";
 
 const ProductWrapper = styled.div`
     height: 80%;
@@ -52,6 +52,7 @@ const ProductAddButton = styled.button`
 `;
 
 export default function Product(props){
+
     return (
         <ProductWrapper>
         <ProductPhoto>
@@ -66,7 +67,7 @@ export default function Product(props){
         < ProductAvailability>
         Immediatly available
         </ProductAvailability>
-        <ProductAddButton>
+        <ProductAddButton onClick={props.onClick}>
         + &#x1F6D2;
         </ProductAddButton>
     </ProductWrapper>

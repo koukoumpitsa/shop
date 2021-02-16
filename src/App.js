@@ -13,11 +13,16 @@ const AppWrapper = styled.div`
 `;
 
 function App() {
+  const [addedItem, setAddedItem] = useState(0);
+
+  function handleClickEvent(){
+    setAddedItem(addedItem +1);
+  }
 
   return (
     <AppWrapper>
-      <NavBar/>
-      <Body/>
+      <NavBar addedItem={addedItem}/>
+      <Body onClick={handleClickEvent}/>
     </AppWrapper>
   );
 }
