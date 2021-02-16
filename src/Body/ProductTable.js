@@ -12,9 +12,11 @@ grid-gap: 1em;
 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 `;
 export default function ProductTable(){
-    return data.map((item,index) => {
-            return (
-                <Product name={item.name} price={item.price} key={index}/>
-            );
-    });
+    const productData = data.map((item,index) => <Product name={item.name} price={item.price} key={item.id} photo={item.photo}/>);
+
+    return (
+        <ProductTableWrapper>
+            {productData}
+        </ProductTableWrapper>
+    )
 }

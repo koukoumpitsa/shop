@@ -1,17 +1,25 @@
 import styled from "styled-components";
+import React from "react";
 
 const ProductWrapper = styled.div`
     height: 80%;
     // border: 1px solid black;
     display: grid;
-    grid-template-rows: 3fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: minmax(10px, 25%) 25px 25px 25px;
+    grid-template-columns: auto;
     place-items: start;
     grid-gap: .3em;
     margin: 1em;
 `;
 
 const ProductPhoto = styled.div`
-
+    display: grid;
+    place-items: center;
+    height: 1fr;
+    img {
+        height: 50%;
+        align-self: center;
+    }
 `;
 
 const ProductName = styled.p`
@@ -43,24 +51,25 @@ const ProductAddButton = styled.button`
     cursor: pointer;
 `;
 
-export default function Product(){
-    return(
+export default function Product(props){
+    return (
         <ProductWrapper>
-            <ProductPhoto>
-                <img src="#" alt=""/>
-            </ProductPhoto>
-            <ProductName>
-                Product Name
-            </ProductName>
-            <ProductPrice>
-                $30
-            </ProductPrice>
-            < ProductAvailability>
-            Immediatly available
-            </ProductAvailability>
-            <ProductAddButton>
-            + &#x1F6D2;
-            </ProductAddButton>
-        </ProductWrapper>
+        <ProductPhoto>
+            {/* <img src={props.photo} alt="product"/> */}
+        </ProductPhoto>
+        <ProductName>
+            {props.name}
+        </ProductName>
+        <ProductPrice>
+            ${props.price}
+        </ProductPrice>
+        < ProductAvailability>
+        Immediatly available
+        </ProductAvailability>
+        <ProductAddButton>
+        + &#x1F6D2;
+        </ProductAddButton>
+    </ProductWrapper>
     );
 }
+
