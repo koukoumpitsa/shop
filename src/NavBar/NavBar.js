@@ -29,6 +29,9 @@ const ButtonCart= styled.button`
     width: 40%;
     display: grid;
     place-items: center;
+    cursor: pointer;
+    border: none;
+    border-radius: .5em;
 `;
 
 export default function NavBar(props){

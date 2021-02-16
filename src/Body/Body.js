@@ -4,7 +4,7 @@ import ProductTable from "./ProductTable";
 
 const BodyWrapper =styled.div`
     backround-color: #FAF3DD;
-    height: 100%;
+    height: 90%;
     width: 90%;
     display: grid;
     grid-template-rows: minmax(50px, 10%) 1fr;
