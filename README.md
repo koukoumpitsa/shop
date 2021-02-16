@@ -8,6 +8,6 @@ A first exploration towards creating an e-shop app.
 - Understanding and working on developing more of a responsive design mindset
 
 
-#### Reflecton on project
+#### Reflection on project
 - Build smaller pieces rather than finalize complete compoenents 
 - Build first with resposnsiveness in mind and not later
