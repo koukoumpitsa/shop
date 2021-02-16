@@ -1,4 +1,4 @@
-# My-Shop App
+# My-Shop App :credit_card:
 
 First exploration towards creating an e-shop app. 
 
