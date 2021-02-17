@@ -44,7 +44,7 @@ export default function NavBar(props){
             </TitleBox>
         
             <ButtonCart>
-                &#x1F6D2; {props.cart}
+                &#x1F6D2; {props.addedItem}
             </ButtonCart>
        
         </NavBarWrapper>

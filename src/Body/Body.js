@@ -41,7 +41,7 @@ export default function Body(props){
                     ** Free shipping above 25$
                 </BodyTitleSecondary>
             </BodyTitlesWrapper>
-            <ProductTable/>
+            <ProductTable onButtonClick={props.onButtonClick}/>
         </BodyWrapper>
     );
 }
