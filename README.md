@@ -1,6 +1,6 @@
-# My-Shop App
+# My-Shop App :credit_card:
 
-First exploration towards creating an e-shop app. 
+A first exploration towards creating an e-shop app. 
 
 #### Objectives of project
 - Become more confortable with arrays of objects and mapping through them to retrieve data even when static
@@ -8,6 +8,6 @@ First exploration towards creating an e-shop app.
 - Understanding and working on developing more of a responsive design mindset
 
 
-#### Reflecton on project
+#### Reflection on project
 - Build smaller pieces rather than finalize complete compoenents 
 - Build first with resposnsiveness in mind and not later
