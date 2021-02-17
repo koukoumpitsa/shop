@@ -28,7 +28,7 @@ function App() {
   return (
     <AppWrapper>
       <NavBar addedItem={item} completed={complete}/>
-      <Body onButtonClick={handleClickEvent}/>
+      <Body onButtonClick={handleClickEvent} />   
     </AppWrapper>
   );
 }
