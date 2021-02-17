@@ -1,6 +1,8 @@
 # My-Shop App :credit_card:
 
-A first exploration towards creating an e-shop app. 
+A first exploration towards creating an e-shop app.
+
+Here's the [demo](https://heuristic-chandrasekhar-54f672.netlify.app/)
 
 #### Objectives of project
 - Become more confortable with arrays of objects and mapping through them to retrieve data even when static
