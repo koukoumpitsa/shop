@@ -39,13 +39,13 @@ const data = [
         id:7,
         name: "Meal 1",
         price: 23,
-        photo: "./photos/meal 1.png"
+        photo: "./photos/meal-1.png"
     },
     {
         id:8,
         name: "Meal 2",
         price: 24.5,
-        photo: "./photos/meal 2.png"
+        photo: "./photos/meal-2.png"
     },
     {
         id:9,

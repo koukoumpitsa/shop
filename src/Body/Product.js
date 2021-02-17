@@ -5,7 +5,7 @@ const ProductWrapper = styled.div`
     height: 80%;
     // border: 1px solid black;
     display: grid;
-    grid-template-rows: minmax(10px, 25%) 25px 25px 25px;
+    grid-template-rows: minmax(90px, 25%) 25px 25px 25px;
     grid-template-columns: auto;
     place-items: start;
     grid-gap: .3em;
@@ -15,9 +15,10 @@ const ProductWrapper = styled.div`
 const ProductPhoto = styled.div`
     display: grid;
     place-items: center;
-    height: 1fr;
+    height: 100%;
+    width:100%;
     img {
-        height: 50%;
+        height: 85px;
         align-self: center;
     }
 `;
@@ -58,7 +59,7 @@ export default function Product(props){
     return (
         <ProductWrapper>
         <ProductPhoto>
-            {/* <img src={props.photo} alt="product"/> */}
+            <img src={props.photo} alt="product"/>
         </ProductPhoto>
         <ProductName>
             {props.name}
