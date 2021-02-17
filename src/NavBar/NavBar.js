@@ -32,6 +32,10 @@ const ButtonCart= styled.button`
     cursor: pointer;
     border: none;
     border-radius: .5em;
+    font-size: minmax(12px, 10%);
+    font-weight: bold;
+    outline: none;
+    color: ${props => props.completed? "#ef233c" : "black"};
 `;
 
 export default function NavBar(props){
@@ -43,8 +47,8 @@ export default function NavBar(props){
                 </StoreTitleMain>
             </TitleBox>
         
-            <ButtonCart>
-                &#x1F6D2; {props.addedItem}
+            <ButtonCart completed={props.completed}>
+                &#x1F6D2; {props.addedItem} 
             </ButtonCart>
        
         </NavBarWrapper>

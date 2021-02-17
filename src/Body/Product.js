@@ -49,6 +49,8 @@ const ProductAddButton = styled.button`
     border: none;
     border-bottom: .5px solid black;
     cursor: pointer;
+    outline: none;
+    
 `;
 
 export default function Product(props){

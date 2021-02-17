@@ -14,14 +14,20 @@ const AppWrapper = styled.div`
 
 function App() {
   const [item, setItem] = useState(0);
+  const [complete, setComplete] = useState(false);
 
   function handleClickEvent(){
+    if(item < 10){
       setItem(item + 1);
+    } else if (item == 10) {
+      setComplete("true");
+    }
+      
   }
 
   return (
     <AppWrapper>
-      <NavBar addedItem={item}/>
+      <NavBar addedItem={item} completed={complete}/>
       <Body onButtonClick={handleClickEvent}/>
     </AppWrapper>
   );
