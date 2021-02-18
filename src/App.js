@@ -16,6 +16,14 @@ function App() {
   const [item, setItem] = useState(0);
   const [complete, setComplete] = useState(false);
 
+  console.log(
+    "Made with <3 " +
+    "a lot of coffee " +
+    "and a bit of fustration ;)" +
+    " - Dimitra Chantzopoulou - Feb. 2021"
+    
+  );
+
   function handleClickEvent(){
     if(item < 10){
       setItem(item + 1);
